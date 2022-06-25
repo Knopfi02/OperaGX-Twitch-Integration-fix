@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Se déconnecter"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Panneau Twitch"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Rétroaction"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Évaluez cette fonctionnalité."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Chaînes que vous suivez"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Abonnés"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Aller à Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "S'identifier"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Silence"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Découvrez ce qui est en direct"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Connectez-vous à Twitch pour voir les chaînes que vous suivez, les chaînes en direct et être informé quand commence une nouvelle diffusion."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Votre compte"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Rétablir son"
+   }
+}

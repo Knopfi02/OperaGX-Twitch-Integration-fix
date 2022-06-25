@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Odhlásit se"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Panel Twitch"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Zpětná vazba"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Ohodnoťte tuto funkci."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Sledované kanály"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Sledující"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Přejít na Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Přihlásit"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Ztlumit"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Podívejte se, co se právě děje"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Přihlaste se do služby Twitch a získejte přehled, které kanály sledujete, které právě vysílají živě a dostávejte upozornění na zahájení vysílání."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Váš účet"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Zrušit ztlumení"
+   }
+}

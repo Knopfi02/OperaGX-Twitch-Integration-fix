@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "ลงชื่อออก"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "แผง Twitch"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "ข้อคิดเห็น"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "ให้คะแนนคุณลักษณะนี้"
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "ช่องที่ติดตาม"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "ผู้ติดตาม"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "ไปที่ Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "เข้าสู่ระบบ"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "ปิดเสียง"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "ดูว่ามีอะไรไลฟ์สด"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "เข้าสู่ระบบเพื่อ Twitch เพื่อดูว่าช่องต่าง ๆ ที่คุณติดตาม มีช่องใดที่ไลฟ์สด และรับข้อความแจ้งเมื่อสตรีมใหม่เริ่มขึ้น"
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "บัญชีของคุณ"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "เปิดเสียง"
+   }
+}

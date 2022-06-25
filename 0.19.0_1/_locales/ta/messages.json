@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "வெளியேறு"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Twitch பேனல்"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "பின்னூட்டம்"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "இந்த அம்சத்தை மதிப்பிடவும்."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "பின்தொடரும் சேனல்கள்"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "பின்தொடர்பவர்கள்"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Twitch-க்குச் செல்க"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "உள்நுழை"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "ஒலிநிறுத்து"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "என்னென்ன நேரலை என்று பாருங்கள்"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "நீங்கள் பின்தொடரும் சேனல்களைப் பார்க்க Twitch-இல் உள்நுழையவும், அவை நேரலை வரும்போதும், புதிய ஸ்ட்ரீம்களைத் தொடங்கும்போதும் அறிவிப்புகளைப் பெறுவீர்கள்."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "உங்கள் கணக்கு"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "ஒலிஇயக்கு"
+   }
+}

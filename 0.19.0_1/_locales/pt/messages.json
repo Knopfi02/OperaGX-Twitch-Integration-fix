@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Terminar sessão"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Painel Twitch"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Opinião"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Classificar esta funcionalidade."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Canais seguidos"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Seguidores"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Aceder a Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Iniciar sessão"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Sem Som"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Veja o que está em direto"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Inicie sessão no Twitch para ver canais que segue, os que estão em direto e obtenha notificações quando começar uma transmissão em fluxo."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "A sua conta"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Com Som"
+   }
+}

@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Ondoka"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Kidirisha cha Twitch"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Maoni"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Kadiria kipengele hiki."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Idhaa inazofuata"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Wanaofuata"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Nenda kwenye Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Ingia"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Nyamazisha"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Tazama kilicho cha moja kwa moja"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Ingia kwenye Twitch ili uone idhaa unazofuata, zile za moja kwa moja na upate taarifa wakati mtiririko mwingine unapoanza."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Akaunti yako"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Wezesha sauti"
+   }
+}

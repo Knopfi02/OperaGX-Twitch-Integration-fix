@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Atteikties"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Twitch panelis"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Atsauksmes"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Novērtējiet šo funkciju."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Kanāli, kam sekojat"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Sekotāji"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Pāriet uz Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Pieteikties"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Izslēgt skaņu"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Skatiet, kas ir tiešraidē"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Piesakieties Twitch, lai redzētu kanālus, kam sekojat, kuri ir tiešraidē, un saņemiet paziņojumus, kad sākas jauna plūsma."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Jūsu konts"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Ieslēgt skaņu"
+   }
+}

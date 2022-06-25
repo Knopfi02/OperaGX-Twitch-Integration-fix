@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Fazer logout"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Painel do Twitch"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Feedback"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Avalie este recurso."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Canais seguidos"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Seguidores"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Ir para o Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Fazer login"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Mudo"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Veja o que está ativo"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Faça login no Twitch para ver os canais que você segue e os que estão ativos, além de receber notificações quando um novo streaming é iniciado."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Sua conta"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Desativar mudo"
+   }
+}

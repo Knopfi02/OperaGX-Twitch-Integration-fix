@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Oturumu kapat"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Twitch paneli"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Geri bildirim"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Bu özelliği puanlayın."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Takip edilen kanallar"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Takipçiler"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Twitch'e gidin"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Giriş"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Sessiz"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Yenilere göz atın"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Takip ettiğiniz canlı kanalları izlemek için Twitch'e giriş yapın ve yeni bir akış başladığında bildirim alın."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Hesabın"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Sesi aç"
+   }
+}

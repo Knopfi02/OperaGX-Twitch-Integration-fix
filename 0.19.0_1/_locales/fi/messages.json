@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Kirjaudu ulos"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Twitch-paneeli"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Palaute"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Arvioi tämä ominaisuus."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Seuratut kanavat"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Seuraajat"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Siirry Twitchiin"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Kirjaudu sisään"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Mykistä"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Katso, mitä tällä hetkellä on menossa"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Kirjaudu Twitchiin, niin näet seuraamasi kanavat sekä menossa olevat lähetykset ja saat ilmoitukset uusista lähetyksistä."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Oma tili"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Poista mykistys"
+   }
+}

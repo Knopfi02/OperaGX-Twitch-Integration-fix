@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Одјави се"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Twitch панел"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Коментар"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Оцените ову функцију."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Праћени канали"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Пратиоци"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Иди на Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Пријава"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Стишај"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Погледајте шта се емитује уживо"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Пријавите се на Twitch да бисте видели канале које пратите, који канали се емитују уживо и добијајте обавештења када почне ново емитовање."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Ваш налог"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Дозволи звук"
+   }
+}

@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="components/input_styles.css">
+  </head>
+  <body>
+    <main>
+      <div class="top-panel-login">
+        <div class="top-bar">
+          <span>Twitch</span>
+        </div>
+        <div class="header" data-i18n="titleBar"></div>
+        <div class="description" data-i18n="titleBarDescription"></div>
+        <img src="./assets/twitch-placeholder@x1.png"
+          srcset="./assets/twitch-placeholder@x1.png 1x, ./assets/twitch-placeholder@x2.png 2x"/>
+        <div class="button primary" data-i18n="login"></div>
+      </div>
+      <div id='main-content'>
+        <div class="top-bar">
+          <span>Twitch</span>
+          <div class="top-button settings">
+            <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
+              <path d="M11.833 7.118v.764L14 9.602l-1.182 2.295-2.56-.573-.985.573L8.879 14H6.12l-.394-2.103-.985-.573-2.56.573L1 9.603l2.167-1.72v-.765L1 5.398l1.182-2.295 2.56.573.985-.573L6.121 1H8.88l.394 2.103.985.573 2.56-.573L14 5.397l-2.167 1.72zm-3.429 2.5c1.206-.484 1.779-1.826 1.279-2.996S7.802 4.896 6.596 5.381c-1.206.485-1.779 1.826-1.279 2.997.5 1.17 1.881 1.726 3.087 1.24z" stroke="var(--icon-color)" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+        </div>
+        <div class="beta"><div class="badge" data-i18n="feedback"></div> <span data-i18n="feedbackDescription"></span></div>
+        <div class="top-panel-logged">
+          <div class="header" data-i18n="titleBarLogged"></div>
+          <div class="user">
+            <div class="avatar"><img src=""></div>
+            <div class="name"></div>
+            <div class="followers"><span data-i18n="followers"></span>: <span class="number"></span></div>
+          </div>
+          <div class="divider"></div>
+          <div class="header" data-i18n="followed"></div>
+        </div>
+        <div id="filter" class="filter">
+          <input type="text" class="filter-input locale-filterFollows">
+        </div>
+        <stream-list id="streams"></stream-list>
+
+        <div class="footer">
+          <div class="divider"></div>
+          <a class="button button-twitch"  href="https://www.twitch.tv/" target="_blank">
+            <span data-i18n="goToTwitch"></span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" class="goToTwitchIcon">
+              <g fill="none" fill-rule="evenodd">
+                <circle cx="7.5" cy="7.5" r="7.5" fill="var(--opera-button-border-color)" />
+                <path fill="#FFF" d="M10.15 7L8.18 5.03a.5.5 0 1 1 .707-.706L11.364 6.8a1 1 0 0 1 0 1.415l-2.473 2.473a.5.5 0 1 1-.707-.708L10.164 8H3.5a.5.5 0 0 1 0-1h6.65z" />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div id="settings-content">
+        <div class="top-bar">
+          <span>Settings</span>
+          <div class="top-button close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11">
+              <path fill="var(--icon-color)" fill-rule="nonzero" d="M10.84.16a.544.544 0 0 0-.77 0L5.5 4.73.93.16a.544.544 0 1 0-.77.77L4.73 5.5l-4.57 4.57a.544.544 0 0 0 .386.93c.14 0 .28-.054.386-.16L5.5 6.271l4.57 4.57a.544.544 0 0 0 .77-.77L6.271 5.5l4.57-4.57a.545.545 0 0 0 0-.771z" />
+            </svg>
+          </div>
+        </div>
+        <div class="header" data-i18n="optionsFeatures"></div>
+        <div id='settings-features'>
+          <div class='label toggle'><div data-i18n="optionsSounds"></div><input type="checkbox" id="play-sounds" bind-preference="!soundsMuted"></div>
+          <div class='label toggle'><div data-i18n="optionsFilter"></div><input type="checkbox" id="enable-filter" bind-preference="showFilter"></div>
+        </div>
+        <div class="divider"></div>
+        <div class="header" data-i18n="optionsAppearance"></div>
+        <div id="settings-appearance">
+          <div class="label" data-i18n="optionsListStyle"></div>
+          <div id="avatar-list-style" bind-preference="avatarListStyle">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="14px" viewBox="0 0 22 14" version="1.1">
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Twitch-Settings" transform="translate(-59.000000, -303.000000)" stroke="var(--icon-color)" stroke-width="2">
+                    <g id="Tile-View" transform="translate(17.000000, 294.000000)">
+                      <g id="Tile-View-Icon" transform="translate(41.000000, 4.000000)">
+                        <rect id="Rectangle" x="2" y="6" width="4" height="4"/>
+                        <rect id="Rectangle" x="10" y="6" width="4" height="4"/>
+                        <rect id="Rectangle" x="18" y="6" width="4" height="4"/>
+                        <rect id="Rectangle" x="2" y="14" width="4" height="4"/>
+                        <rect id="Rectangle" x="10" y="14" width="4" height="4"/>
+                        <rect id="Rectangle" x="18" y="14" width="4" height="4"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <input type="radio" hidden name="avatar-list-style" value="icons" class='horizontally-centered'>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="14px" viewBox="0 0 22 14" version="1.1">
+                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                  <g id="Twitch-Settings" transform="translate(-179.000000, -303.000000)" stroke="var(--icon-color)">
+                    <g id="List-View" transform="translate(137.000000, 294.000000)">
+                      <g id="List-View-Icon" transform="translate(41.000000, 4.000000)">
+                        <rect id="Rectangle" stroke-width="2" x="2" y="6" width="4" height="4"/>
+                        <rect id="Rectangle" stroke-width="2" x="2" y="14" width="4" height="4"/>
+                        <rect id="Rectangle" stroke-width="1" x="9.5" y="9.5" width="13" height="1"/>
+                        <rect id="Rectangle" stroke-width="1" x="9.5" y="5.5" width="13" height="1"/>
+                        <rect id="Rectangle" stroke-width="1" x="9.5" y="13.5" width="13" height="1"/>
+                        <rect id="Rectangle" stroke-width="1" x="9.5" y="17.5" width="13" height="1"/>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <input type="radio" hidden name="avatar-list-style" value="details" class='horizontally-centered'>
+            </div>
+          </div>
+          <div class="label" data-i18n="optionsHoverStyle"></div>
+          <div id="avatar-hover-effect" bind-preference="avatarHoverEffect">
+            <div>
+              <stream-list hover-mode="slide-in" class="hover-effect-visualization"></stream-list>
+              <input type="radio" hidden name="avatar-hover-effect" value="slide-in" class='horizontally-centered'>
+            </div>
+            <div>
+              <stream-list hover-mode="small-to-large" class="hover-effect-visualization"></stream-list>
+              <input type="radio" hidden name="avatar-hover-effect" value="small-to-large" class='horizontally-centered'>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="divider"></div>
+          <a class="button" id="options-logout" data-i18n="contextMenuLogout"></a>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/components/stream_list.js"></script>
+    <script type="module" src="sidebar.js"></script>
+  </body>
+</html>

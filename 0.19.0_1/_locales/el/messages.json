@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Αποσύνδεση"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Πλαίσιο του Twitch"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Σχόλια"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Βαθμολογήστε το."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Κανάλια που ακολουθώ"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Ακόλουθοι"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Μετάβαση στο Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Σύνδεση"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Σίγαση"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Δείτε τα live"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Συνδεθείτε στο Twitch για να βλέπετε τα κανάλια που ακολουθείτε, ποια είναι live, και ειδοποιήσεις για νέα stream."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Ο λογαριασμός σας"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Κατάργηση σίγασης"
+   }
+}

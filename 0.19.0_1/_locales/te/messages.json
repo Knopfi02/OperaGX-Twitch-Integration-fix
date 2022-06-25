@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "లాగ్ అవుట్"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Twitch ప్యానెల్"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "ఫీడ్‌బ్యాక్"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "ఈ ముఖ్యాంశం."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "ఛానెల్స్ అనుసరించబడ్డాయి"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "అనుసరించేవారు"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Twitch కి వెళ్ళండి"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "లాగ్ ఇన్"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "మ్యూట్"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "ప్రత్యక్ష ప్రసారం ఏమిటో చూడండి"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "ప్రత్యక్ష ప్రసారం అవుతున్న మీరు అనుసరించే ఛానెల్స్ చూడడానికి Twitch కి లాగిన్ అవ్వండి మరియు క్రొత్త స్ట్రీమ్ ప్రారంభమయినప్పుడు నోటిఫికేషన్లను పొందండి."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "మీ ఖాతా"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "మ్యూట్‌ను తీసివేయి"
+   }
+}

@@ -1,0 +1,519 @@
+/**
+ * Copyright (C) 2019 Opera Software AS. All rights reserved.
+ * This file is an original work developed by Opera Software AS
+ */
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-clip: padding-box;
+  background-color: var(--scrollbar-color);
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-hover-color);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::selection {
+  background-color: var(--main-color);
+  color: var(--main-font-color);
+}
+
+/* For compatibility with older Opera versions not supporting palette API */
+:root {
+  --palette-gx_base_0: #000000ff;
+  --palette-gx_base_1: #070609ff;
+  --palette-gx_base_2: #131118ff;
+  --palette-gx_base_3: #1c1924ff;
+  --palette-gx_base_4: #262130ff;
+  --palette-gx_base_5: #2f2a3cff;
+  --palette-gx_base_6: #4c4360ff;
+  --palette-gx_base_7: #8f84a9ff;
+  --palette-gx_base_8: #c0bacfff;
+  --palette-gx_base_9: #ffffffff;
+    /* map new colors to new ones so that we work with old versions too */
+  --palette-gx_no_00: var(--palette-gx_base_0);
+  --palette-gx_no_04: var(--palette-gx_base_1);
+  --palette-gx_no_08: var(--palette-gx_base_2);
+  --palette-gx_no_12: var(--palette-gx_base_3);
+  --palette-gx_no_16: var(--palette-gx_base_4);
+  --palette-gx_no_20: var(--palette-gx_base_5);
+  --palette-gx_no_32: var(--palette-gx_base_6);
+  --palette-gx_no_59: var(--palette-gx_base_7);
+  --palette-gx_no_77: var(--palette-gx_base_8);
+  --palette-gx_no_100: var(--palette-gx_base_9);
+
+  --margin: 16px;
+  --small-margin: calc(var(--margin) / 4);
+
+  --scrollbar-color: #66666655;
+  --scrollbar-hover-color: #99999988;
+  --opera-primary-button-background-color: var(--opera-primary-color);
+  --opera-primary-button-border-color: var(--main-darker-color);
+}
+
+
+@media (prefers-color-scheme: dark) {
+:root {
+  --base-font-color: var(--palette-gx_no_100);
+  --secondary-font-color: var(--palette-gx_no_77);
+
+  --background-color: var(--palette-gx_no_12);
+  --opera-button-background-color: var(--palette-gx_no_20);
+  --opera-button-border-color: var(--palette-gx_no_32);
+  --opera-input-background-color: var(--palette-gx_no_16);
+  --opera-input-border-color: var(--palette-gx_no_32);
+  --opera-separator-color: var(--palette-gx_no_32);
+  --switch-unchecked-background-color: var(--palette-gx_no_8);
+  --switch-checked-background-color: var(--palette-gx_no_8);
+  --switch-toggle-color: var(--palette-gx_no_77);
+  --icon-color: var(--palette-gx_no_77);
+
+  --footer-gradient-start: hsla(var(--palette-gx_no_08-values) / 0);
+  --footer-gradient-middle:  hsla(var(--palette-gx_no_08-values) / 0.63);
+  --footer-gradient-end: var(--palette-gx_no_08);
+}
+}
+
+@media (prefers-color-scheme: light) {
+:root {
+  --base-font-color: var(--palette-gx_no_00);
+  --secondary-font-color: var(--palette-gx_no_24);
+
+  --background-color: var(--palette-gx_no_98);
+  --opera-button-background-color: var(--palette-gx_no_90);
+  --opera-button-border-color: var(--palette-gx_no_80);
+  --opera-separator-color: var(--palette-gx_no_80);
+  --opera-input-background-color: var(--palette-gx_no_88);
+  --opera-input-border-color: var(--palette-gx_no_80);
+  --switch-unchecked-background-color: var(--palette-gx_no_80);
+  --switch-checked-background-color: var(--main-color);
+  --switch-toggle-color: var(--palette-gx_no_100);
+  --icon-color: var(--palette-gx_no_24);
+
+  --footer-gradient-start: hsla(var(--palette-gx_no_80-values)/ 0);
+  --footer-gradient-middle:  hsla(var(--palette-gx_no_80-values)/ 0.63);
+  --footer-gradient-end: var(--palette-gx_no_96);
+}
+}
+
+html {
+  background-color: var(--background-color);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0 0 110px;
+  user-select: none;
+}
+
+main {
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  overflow: overlay;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  scroll-behavior: smooth;
+  top: 0;
+}
+
+.beta {
+  align-items: center;
+  color: var(--secondary-font-color);
+  cursor: hand;
+  display: flex;
+  font: 12px system-ui;
+  margin: calc(var(--margin) * 2) var(--margin);
+}
+
+.beta .badge {
+  background: var(--main-color);
+  border-radius: 2px;
+  color: var(--main-font-color);
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+  margin-right: var(--margin);
+  padding: 2px 4px;
+  text-transform: uppercase;
+}
+
+#streams {
+  margin: 0 calc(var(--margin) - var(--small-margin));
+  padding: 0 -8px;
+}
+
+/* Top login panels */
+
+.top-panel-logged {
+  display: none;
+}
+
+.top-panel-login {
+  display: none;
+  padding: 0 0 calc(var(--margin) * 2);
+}
+
+.top-panel-login .top-bar {
+  margin: 0 0 calc(var(--margin) * 2);
+}
+
+.top-panel-login .header {
+  margin: 0 var(--margin);
+}
+
+.top-panel-login .divider {
+  margin-bottom: calc(var(--margin) * 2);
+}
+
+.top-panel-login img {
+  margin: var(--margin);
+}
+
+/* activities */
+
+.activity_login .top-panel-login {
+  display: block;
+}
+
+.activity_main .top-panel-logged {
+  display: block;
+}
+
+#main-content {
+  display: none;
+}
+
+.activity_main #main-content {
+  display: block;
+}
+
+#settings-content {
+  color: var(--secondary-font-color);
+  display: none;
+}
+
+.activity_settings #settings-content {
+  display: block;
+}
+
+.activity_settings .button.button-twitch {
+  display: none;
+}
+
+#options-back {
+  cursor: hand;
+  display: none;
+}
+
+.activity_settings #options-back {
+  display: block;
+}
+
+/* Title bar */
+
+.top-bar {
+  color: var(--base-font-color);
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 var(--small-margin) 0 0;
+  padding: var(--margin);
+  padding-right: 0;
+  position: relative;
+}
+
+.top-bar::after {
+  background-image: linear-gradient(to right, var(--main-color), transparent);
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 242px;
+}
+
+.top-bar .top-button {
+  cursor: hand;
+  height: 15px;
+  position: absolute;
+  right: 16px;
+  top: 19px;
+  width: 15px;
+  z-index: 5;
+}
+
+.activity_settings .top-bar .top-button {
+  width: 11px;
+  top: 21px;
+  right: 18px;
+}
+
+.activity_login .top-bar .top-button {
+  display: none;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  margin: var(--margin);
+}
+
+.user .avatar {
+  grid-row: span 2;
+}
+
+.user .name {
+  color: var(--secondary-font-color);
+  font-size: 14px;
+  font-weight: 500;
+  grid-row: span 1;
+  padding-top: 8px;
+  vertical-align: bottom;
+}
+
+.user .followers {
+  color: var(--secondary-font-color);
+  font-size: 14px;
+  font-weight: 300;
+  grid-row: span 2;
+}
+
+/* Header */
+
+div.header {
+  color: var(--base-font-color);
+  font-size: 16px;
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+  grid-column: span 3;
+  letter-spacing: normal;
+  line-height: normal;
+  margin: calc(var(--margin) * 2) var(--margin);
+}
+
+div.description {
+  color: var(--secondary-font-color);
+  font-size: 12px;
+  grid-column: span 3;
+  margin: var(--margin);
+}
+
+div.divider {
+  border-top: solid 1px var(--opera-separator-color);
+  grid-column: span 3;
+  margin: 0 var(--margin);
+  padding: 1px;
+}
+
+/* Filter form */
+
+.filter {
+  margin: calc(var(--margin) * -1) var(--margin) var(--margin);
+}
+
+.filter-input {
+  background-color: var(--opera-input-background-color);
+  background-image: url(./assets/search.svg);
+  background-position: 0.5em center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  border: solid 1px var(--opera-input-border-color);
+  border-radius: 2px;
+  color: var(--base-font-color);
+  display: block;
+  font-size: 14px;
+  height: 28px;
+  padding: var(--small-margin);
+  padding-left: 2em;
+  width: 100%;
+}
+
+.filter-input,
+.filter-input:focus {
+  outline: none;
+}
+
+.filter-input:focus,
+.filter-input:not(:placeholder-shown) {
+  border: solid 1px var(--main-color);
+}
+
+.filter-input::placeholder {
+  color: #73717a;
+}
+
+.top-panel-logged div.avatar,
+.top-panel-logged div.avatar img {
+  height: 50px;
+  width: 50px;
+}
+
+/* Buttons */
+.button {
+  background-color: var(--opera-button-background-color);
+  border: solid 1px var(--opera-button-border-color);
+  border-radius: 3px;
+  color: var(--base-font-color);
+  cursor: hand;
+  display: block;
+  font: normal 13px system-ui;
+  grid-column: span 3;
+  height: 32px;
+  line-height: 32px;
+  margin: var(--margin);
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: var(--opera-button-border-color);
+}
+
+.button.primary {
+  background-color: var(--opera-primary-button-background-color);
+  border: solid 1px var(--opera-primary-button-border-color);
+  color: var(--main-font-color);
+}
+
+/* Footer */
+
+.footer {
+  background: linear-gradient(
+    to bottom,
+    var(--footer-gradient-start) 0%,
+    var(--footer-gradient-middle) 28%,
+    var(--footer-gradient-end) 28%,
+    var(--footer-gradient-end) 100%
+  );
+  bottom: 0;
+  height: 78px;
+  padding-top: 30px;
+  position: fixed;
+  width: 100%;
+}
+
+.activity_main .footer .divider {
+  margin: 0;
+}
+
+.button.button-twitch {
+  height: 45px;
+  line-height: 45px;
+  position: relative;
+}
+
+.button.button-twitch::before,
+.goToTwitchIcon {
+  background-repeat: no-repeat;
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+.button.button-twitch::before {
+  background-image: url(./assets/go-to-twitch-logo.svg);
+  height: 27px;
+  left: 9px;
+  top: calc(50% - 27px / 2);
+  width: 27px;
+}
+
+.goToTwitchIcon {
+  height: 15px;
+  right: 9px;
+  top: calc(50% - 15px / 2);
+  width: 15px;
+}
+
+/* Options */
+
+#settings-content div.header {
+  margin: calc(var(--margin) * 2) var(--margin);
+}
+
+#avatar-list-style,
+#avatar-hover-effect {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--margin);
+  margin-top: var(--margin);
+}
+
+#avatar-list-style > div,
+#avatar-hover-effect > div {
+  align-items: center;
+  border: solid 1px;
+  border-color: var(--opera-button-border-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#avatar-hover-effect > div {
+  padding-bottom: 17px;
+  padding-left: 13.5px;
+  padding-right: 13.5px;
+  padding-top: 17px;
+}
+
+#avatar-list-style > div {
+  padding-bottom: 9px;
+  padding-left: 41.5px;
+  padding-right: 41.5px;
+  padding-top: 9px;
+}
+
+#avatar-list-style > div.selected,
+#avatar-hover-effect > div.selected {
+  background-color: var(--main-transparent-background-color);
+  border-color: var(--main-color);
+}
+
+#settings-features {
+  margin: 0 var(--margin) calc(var(--margin) * 2);
+}
+
+.label {
+  color: var(--secondary-font-color);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#settings-appearance {
+  margin: 0 var(--margin) 8px;
+}
+
+#settings-appearance > div.label {
+  margin-bottom: 8;
+}
+
+#settings-features > div {
+  margin-bottom: 8;
+  margin-top: 8;
+}
+
+#settings-features > div:first-child {
+  margin-top: 0;
+}
+
+#settings-features > div:last-child {
+  margin-bottom: 0;
+}

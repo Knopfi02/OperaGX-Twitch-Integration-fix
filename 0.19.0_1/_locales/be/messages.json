@@ -1,0 +1,58 @@
+{
+  "extName": {
+    "message": "Twitch",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Панэль Twitch",
+    "description": "Exstension description"
+  },
+  "titleBar": {
+    "message": "Глядзіце, дзе ідуць трансляцыі",
+    "description": "Title bar"
+  },
+  "titleBarDescription": {
+    "message": "Увайдзіце ў Twitch, каб убачыць каналы, на якія вы падпісаны, даведацца, якія з іх вядуць трансляцыі ў рэжыме рэальнага часу, і атрымліваць апавяшчэнні пра пачатак новых трансляцый.",
+    "description": "Title bar description before login"
+  },
+  "feedback": {
+    "message": "Водгук",
+    "description": "Feedback badge"
+  },
+  "feedbackDescription": {
+    "message": "Ацаніце гэту функцыю.",
+    "description": "Feedback description"
+  },
+  "login": {
+    "message": "Увайсці",
+    "description": "Login button"
+  },
+  "titleBarLogged": {
+    "message": "Ваш уліковы запіс",
+    "description": "Title bar when logged"
+  },
+  "followers": {
+    "message": "Падпісчыкі",
+    "description": "Number of followers"
+  },
+  "followed": {
+    "message": "Падпіскі на каналы",
+    "description": "List of followed channels"
+  },
+  "goToTwitch": {
+    "message": "Перайсці ў Twitch",
+    "description": "Go to Twitch button"
+  },
+  "contextMenuLogout": {
+    "message": "Выйсці",
+    "description": "'Log out' context menu item label"
+  },
+  "mute": {
+    "message": "Выключыць гук",
+    "description": "'Mute' context menu item label"
+  },
+  "unmute": {
+    "message": "Уключыць гук",
+    "description": "'Unmute' context menu item label"
+  }
+}

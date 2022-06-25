@@ -1,0 +1,58 @@
+{
+  "extName": {
+    "message": "Twitch",
+    "description": "Extension name"
+  },
+  "extDescription": {
+    "message": "Panel ng Twitch",
+    "description": "Exstension description"
+  },
+  "titleBar": {
+    "message": "Tingnan kung anong live",
+    "description": "Title bar"
+  },
+  "titleBarDescription": {
+    "message": "Mag-log in sa Twitch para makita ang mga channel na pina-follow mo, alin ang live, at makakuha ng mga notification kapag may bagong stream na nagsimula.",
+    "description": "Title bar description before login"
+  },
+  "feedback": {
+    "message": "Feedback",
+    "description": "Feedback badge"
+  },
+  "feedbackDescription": {
+    "message": "Bigyan ng rating ang feature na ito.",
+    "description": "Feedback description"
+  },
+  "login": {
+    "message": "Mag-log In",
+    "description": "Login button"
+  },
+  "titleBarLogged": {
+    "message": "Ang iyong account",
+    "description": "Title bar when logged"
+  },
+  "followers": {
+    "message": "Mga Follower",
+    "description": "Number of followers"
+  },
+  "followed": {
+    "message": "Mga channel na pina-follow",
+    "description": "List of followed channels"
+  },
+  "goToTwitch": {
+    "message": "Pumunta sa Twitch",
+    "description": "Go to Twitch button"
+  },
+  "contextMenuLogout": {
+    "message": "Mag-log outhan",
+    "description": "'Log out' context menu item label"
+  },
+  "mute": {
+    "message": "I-mute",
+    "description": "'Mute' context menu item label"
+  },
+  "unmute": {
+    "message": "I-unmute",
+    "description": "'Unmute' context menu item label"
+  }
+}

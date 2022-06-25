@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Deconectare"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Panou Twitch"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Feedback"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Evaluați această funcție."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Canale urmărite"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Urmăritori"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Mergi la Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Autentificare"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Fără sunet"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Vezi ce este live"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Conectează-te la Twitch pentru a vedea canalele pe care le urmărești, cele care sunt live și pentru a primi notificări atunci când începe o nouă transmisie."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Contul tău"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Cu sunet"
+   }
+}

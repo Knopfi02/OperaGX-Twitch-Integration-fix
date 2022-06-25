@@ -1,0 +1,23 @@
+/**
+ * Copyright (C) 2019 Opera Software AS. All rights reserved.
+ * This file is an original work developed by Opera Software AS
+ */
+
+:root {
+  --margin: 16px;
+  --small-margin: calc(var(--margin) / 4);
+  --background-color: #13111a;
+}
+
+html {
+  background-color: var(--background-color);
+}
+
+body {
+  font-family: system-ui;
+}
+
+/* Hack to prevent first bad layout until the elements are upgraded */
+stream-list {
+  display: block;
+}

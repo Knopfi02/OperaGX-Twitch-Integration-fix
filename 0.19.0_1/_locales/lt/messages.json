@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Atsijungti"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "„Twitch“ skydelis"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "„Twitch“"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Atsiliepimas"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Įvertinkite šią funkciją."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Stebimi kanalai"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Stebėtojai"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Eiti į „Twitch“"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Prisijungti"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Nutildyti"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Stebėkite tiesiogiai"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Prisijunkite prie „Twitch“, kad tiesiogiai peržiūrėtume stebimus kanalus ir gautumėte pranešimus, kai pradedama nauja transliacija."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Jūsų paskyra"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Įjungti garsą"
+   }
+}
