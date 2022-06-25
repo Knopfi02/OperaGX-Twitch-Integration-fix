@@ -4,7 +4,7 @@ by Knopfi02
 
 ## If the setting "Twitch" under the category "GX" isn't there or you can't turn it on, try the following steps:
 
-1. Download the zip file of this repository
+1. <a href="https://github.com/Knopfi02/OperaGX-Twitch-Integration-fix/archive/refs/heads/main.zip">Download</a> the zip file of this repository
 2. Unpack it
 3. Open Opera GX and go to the extention settings
 4. Enable "Developer mode"
