@@ -1,15 +1,18 @@
 # OperaGX-Twitch-Integration-fix
-by Knopfi02
-### Fix the Twitch integration for OperaGX</br></br></br>
+<tt><i>by Knopfi02</i></tt>
+### Fix the Twitch Sidebar-integration for OperaGX!</br></br></br>
 
-## If the setting "Twitch" under the category "GX" isn't there or you can't turn it on, try the following steps:
+Sometimes OperaGXs Twitch integration is sometimes not there. Here is a potential fix!
+The Twitch integration is technically an extention. You are, however, not able to install it like a normal extention.
+You can, however, use the "Developer Mode" to import extentions from their folder!
 
-1. <a href="https://github.com/Knopfi02/OperaGX-Twitch-Integration-fix/archive/refs/heads/main.zip">Download</a> the zip file of this repository
-2. Unpack it
-3. Open Opera GX and go to the extention settings
-4. Enable "Developer mode"
-5. Press "Load unpacked"
-6. Select the folder called "0.19.0_1"
+## Try the following steps:
+
+1. <a href="https://github.com/Knopfi02/OperaGX-Twitch-Integration-fix/archive/refs/heads/main.zip">Download</a> the zip file of this repository and unpack it
+2. Open Opera GX and go to the extention settings
+3. Enable "Developer mode"
+4. Press "Load unpacked"
+5. Select the folder called "0.19.0_1"
 
 
 If you have problems, please submit an Issue!
