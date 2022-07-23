@@ -2,7 +2,7 @@
 <tt><i>by Knopfi02</i></tt>
 ### Fix the Twitch Sidebar-integration for OperaGX!</br></br></br>
 
-Sometimes OperaGXs Twitch integration is sometimes not there. Here is a potential fix!
+Sometimes OperaGXs Twitch integration is not working/can't be turned on. Here is a potential fix!
 The Twitch integration is technically an extention. But you are not able to install it like a normal extention.
 You can, however, use the "Developer Mode" to import extentions from their folder!
 
