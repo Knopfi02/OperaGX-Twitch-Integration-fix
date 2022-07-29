@@ -9,10 +9,11 @@ You can, however, use the "Developer Mode" to import extentions from their folde
 ## Try the following steps:
 
 1. <a href="https://github.com/Knopfi02/OperaGX-Twitch-Integration-fix/archive/refs/heads/main.zip">Download</a> the zip file of this repository and unpack it
-2. Open Opera GX and go to the extention settings
-3. Enable "Developer mode"
+2. Open Opera GX and go to the link `opera://extensions`.
+3. Enable "Developer mode" in the top left.
 4. Press "Load unpacked"
-5. Select the folder called "0.19.0_1"
+5. Select the unpacked folder called "0.19.0_1"
 
+Hope it helps :D
 
 If you have problems, please submit an Issue!
