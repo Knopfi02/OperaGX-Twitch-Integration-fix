@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Выйти"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Twitch"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Оставить отзыв"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Оцените эту функцию."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Ваши подписки"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Подписчики"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Перейти в Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Войти"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Без звука"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Посмотрите, кто стримит"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Войдите в Twitch, чтобы увидеть каналы, на которые вы подписаны, смотреть стримы, и получать уведомления, когда начинается новый стрим."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Ваша учетная запись"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Со звуком"
+   }
+}

@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Log ud"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Twitch-panel"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Feedback"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Vurder denne funktion."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Fulgte kanaler"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Følgere"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Gå til Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Log ind"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Lydløs"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Se live"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Log ind på Twitch for at se dine fulgte kanaler, se hvilke der er live og modtage meddelelser når en ny afspilning startes."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Din konto"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Med lyd"
+   }
+}

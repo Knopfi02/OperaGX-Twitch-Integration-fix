@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Изход"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Twitch панел"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch "
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Отзиви"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Оценете тази функция."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Последвани канали"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Последователи"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Отворете Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Вход"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Спри звука"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Вижте кой е на живо"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Влезте в Twitch, за да видите от каналите, които следвате, кои са на живо, и получавайте известия когато нов стрийм започне."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Вашият профил"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Пусни звук"
+   }
+}

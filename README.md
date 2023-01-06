@@ -14,8 +14,13 @@ This means, you can get a working version and overwrite the broken one!
 2. Open Opera GX and go to the link `opera://extensions`. (you can also get to the extention settings by other means)
 3. Enable "Developer mode" in the top right.
 4. Click on "Load unpacked"
-5. Select the unpacked folder called "0.19.0_1"
+5. Select the unpacked folder called "0.19.0_0"
 
 Hope it helps :D
 
 (If you have problems, please submit an Issue!)
+
+
+
+
+also: in a few months manifest v2 extentions won't be supported anymore so if I haven't updated this repo once v2 gets completely phased out, remind me :)

@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Wyloguj"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Twitch"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Opinia"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Oceń tę funkcję"
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Obserwowane kanały"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Obserwujący"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Przejdź do Twitch'a"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Zaloguj się"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Wycisz"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Zobacz kto streamuje"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Zaloguj się do Twitcha żeby widzieć, które kanały są online i żeby dostawać powiadomienia o rozpoczęciu streamu. "
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Twoje konto"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Wyłącz wyciszenie"
+   }
+}

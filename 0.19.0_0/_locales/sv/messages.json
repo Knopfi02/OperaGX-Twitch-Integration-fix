@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Logga ut"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Twitch-panel"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Synpunkter"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Betygsätt den här funktionen."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Kanaler som du följer"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Följare"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Gå till Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Logga in"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Ljud av"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Se allt direktsänt"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Logga in till Twitch för att se de kanaler som du följer, vilka som är direktsända och få meddelanden när en ny ström startas."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Ditt konto"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Ljud på"
+   }
+}

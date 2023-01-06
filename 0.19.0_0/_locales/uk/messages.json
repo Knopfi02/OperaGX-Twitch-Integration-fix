@@ -1,0 +1,58 @@
+{
+   "contextMenuLogout": {
+      "description": "'Log out' context menu item label",
+      "message": "Вийти"
+   },
+   "extDescription": {
+      "description": "Exstension description",
+      "message": "Панель Twitch"
+   },
+   "extName": {
+      "description": "Extension name",
+      "message": "Twitch"
+   },
+   "feedback": {
+      "description": "Feedback badge",
+      "message": "Відгук"
+   },
+   "feedbackDescription": {
+      "description": "Feedback description",
+      "message": "Оцінити цю функцію."
+   },
+   "followed": {
+      "description": "List of followed channels",
+      "message": "Канали, на які ви підписані"
+   },
+   "followers": {
+      "description": "Number of followers",
+      "message": "Підписники"
+   },
+   "goToTwitch": {
+      "description": "Go to Twitch button",
+      "message": "Перейти до Twitch"
+   },
+   "login": {
+      "description": "Login button",
+      "message": "Увійти"
+   },
+   "mute": {
+      "description": "'Mute' context menu item label",
+      "message": "Вимкнути звук"
+   },
+   "titleBar": {
+      "description": "Title bar",
+      "message": "Дізнатися, що зараз транслюється"
+   },
+   "titleBarDescription": {
+      "description": "Title bar description before login",
+      "message": "Увійдіть до Twitch, щоб переглянути канали, на які ви підписані, на яких каналах іде трансляція наживо, а також отримуйте сповіщення про початок нових стрімінгових трансляцій."
+   },
+   "titleBarLogged": {
+      "description": "Title bar when logged",
+      "message": "Ваш обліковий запис"
+   },
+   "unmute": {
+      "description": "'Unmute' context menu item label",
+      "message": "Увімкнути звук"
+   }
+}
