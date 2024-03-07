@@ -44,6 +44,7 @@ input[type=checkbox]:checked {
     -webkit-mask-position: center;
     pointer-events: none;
     position: absolute;
+    top: 0;
     width: 36px;
   }
 
@@ -62,6 +63,7 @@ input[type=checkbox]::after {
   height: 21px;
   pointer-events: none;
   position: absolute;
+  top: 0;
   transform: translateX(0);
   transition: transform 0.2s cubic-bezier(0.25, 0.15, 0.29, 1.51);
   width: 36px;

@@ -4,8 +4,8 @@
  */
 
 ::-webkit-scrollbar {
-  height: 12px;
-  width: 12px;
+  height: var(--scrollbar-width);
+  width: var(--scrollbar-width);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -55,6 +55,7 @@
   --margin: 16px;
   --small-margin: calc(var(--margin) / 4);
 
+  --scrollbar-width: 12px;
   --scrollbar-color: #66666655;
   --scrollbar-hover-color: #99999988;
   --opera-primary-button-background-color: var(--opera-primary-color);
@@ -121,7 +122,8 @@ main {
   bottom: 0;
   left: 0;
   margin: 0;
-  overflow: overlay;
+  overflow: auto;
+  scrollbar-gutter: stable;
   padding: 0;
   position: absolute;
   right: 0;
@@ -151,7 +153,7 @@ main {
 }
 
 #streams {
-  margin: 0 calc(var(--margin) - var(--small-margin));
+  margin: 0 calc(var(--margin) - var(--small-margin) - var(--scrollbar-width)) 0 calc(var(--margin) - var(--small-margin));
   padding: 0 -8px;
 }
 
@@ -171,7 +173,7 @@ main {
 }
 
 .top-panel-login .header {
-  margin: 0 var(--margin);
+  margin: 0 calc(var(--margin) - var(--scrollbar-width)) 0 var(--margin);
 }
 
 .top-panel-login .divider {
@@ -179,7 +181,7 @@ main {
 }
 
 .top-panel-login img {
-  margin: var(--margin);
+  margin: var(--margin) calc(var(--margin) - var(--scrollbar-width)) var(--margin) var(--margin);
 }
 
 /* activities */
@@ -240,7 +242,7 @@ main {
   content: '';
   display: block;
   height: 2px;
-  left: 0;
+  left: var(--scrollbar-width);
   position: absolute;
   width: 242px;
 }
@@ -249,7 +251,7 @@ main {
   cursor: hand;
   height: 15px;
   position: absolute;
-  right: 16px;
+  right: 4px;
   top: 19px;
   width: 15px;
   z-index: 5;
@@ -258,7 +260,7 @@ main {
 .activity_settings .top-bar .top-button {
   width: 11px;
   top: 21px;
-  right: 18px;
+  right: 6px;
 }
 
 .activity_login .top-bar .top-button {
@@ -316,14 +318,14 @@ div.description {
 div.divider {
   border-top: solid 1px var(--opera-separator-color);
   grid-column: span 3;
-  margin: 0 var(--margin);
+  margin: 0 calc(var(--margin) - var(--scrollbar-width)) 0 var(--margin);
   padding: 1px;
 }
 
 /* Filter form */
 
 .filter {
-  margin: calc(var(--margin) * -1) var(--margin) var(--margin);
+  margin: calc(var(--margin) * -1) calc(var(--margin) - var(--scrollbar-width)) var(--margin) var(--margin);
 }
 
 .filter-input {
@@ -387,7 +389,11 @@ div.divider {
 .button.primary {
   background-color: var(--opera-primary-button-background-color);
   border: solid 1px var(--opera-primary-button-border-color);
-  color: var(--main-font-color);
+  color: var(--base-font-color);
+}
+
+.button.login {
+  margin: var(--margin) calc(var(--margin) - var(--scrollbar-width)) var(--margin) var(--margin);
 }
 
 /* Footer */
@@ -488,7 +494,7 @@ div.divider {
 }
 
 #settings-features {
-  margin: 0 var(--margin) calc(var(--margin) * 2);
+  margin: 0 calc(var(--margin) - var(--scrollbar-width)) calc(var(--margin) * 2) var(--margin);
 }
 
 .label {
@@ -498,7 +504,7 @@ div.divider {
 }
 
 #settings-appearance {
-  margin: 0 var(--margin) 8px;
+  margin: 0 calc(var(--margin) - var(--scrollbar-width)) 8px var(--margin);
 }
 
 #settings-appearance > div.label {

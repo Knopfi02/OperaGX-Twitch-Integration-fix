@@ -40,6 +40,7 @@ export class TwitchAPI {
     );
   }
 
+  // DEPRECATED
   getFollowedChannels(userId, paginate = true) {
     return this._paginatedApiRequest(
       'users/follows',
@@ -48,10 +49,29 @@ export class TwitchAPI {
     );
   }
 
+  // Same as above but using new endpoint
+  getChannelsFollowed(userId, paginate = true) {
+    return this._paginatedApiRequest(
+      'channels/followed',
+      {user_id: userId},
+      TwitchAPI.pageSize(paginate)
+    );
+  }
+
+  // DEPRECATED
   getFollowersChannels(userId, paginate = true) {
     return this._paginatedApiRequest(
       'users/follows',
       {to_id: userId},
+      TwitchAPI.pageSize(paginate)
+    );
+  }
+
+  // Same as above but using new endpoint
+  getChannelsFollowers(userId, paginate = true) {
+    return this._paginatedApiRequest(
+      'channels/followers',
+      {broadcaster_id: userId},
       TwitchAPI.pageSize(paginate)
     );
   }

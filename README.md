@@ -8,13 +8,13 @@ The Twitch integration is technically an extention, but you are not able to inst
 You can, however, use the "Developer mode" to import extentions from a folder!
 This means, you can get a working version and overwrite the broken one!
 
-## Try the following steps:
+## How to :
 
 1. <a href="https://github.com/Knopfi02/OperaGX-Twitch-Integration-fix/archive/refs/heads/main.zip">Download</a> the zip file of this repository and unpack it
 2. Open Opera GX and go to the link `opera://extensions`. (you can also get to the extention settings by other means)
-3. Enable "Developer mode" in the top right.
+3. Enable "Developer mode" in the top right corner.
 4. Click on "Load unpacked"
-5. Select the unpacked folder called "0.19.0_0"
+5. Select the unpacked folder called "0.21.0_0"
 
 Hope it helps :D
 
@@ -22,5 +22,3 @@ Hope it helps :D
 
 
 
-
-also: in a few months manifest v2 extentions won't be supported anymore so if I haven't updated this repo once v2 gets completely phased out, remind me :)

@@ -18,7 +18,7 @@ const REDIR_URL = new URL(REDIR_URL_STR);
 // maybe id_token not needed?
 const RESPONSE_TYPE = 'token+id_token';
 
-const SCOPE = 'openid';
+const SCOPE = 'openid+user:read:follows';
 
 const AUTH_URL =
   `https://id.twitch.tv/oauth2/authorize?client_id=${CLIENT_ID}&` +
@@ -36,6 +36,8 @@ const CONTEXT_MENU_ID_MUTE = 'mute';
 const CONTEXT_MENU_ID_UNMUTE = 'unmute';
 
 const TILE_PLACEHOLDER_URL = './assets/no-avatar.png';
+
+const USE_IDENTITY_API = true;
 
 class TwitchApp {
   constructor() {
@@ -323,17 +325,69 @@ class TwitchApp {
     return null;
   }
 
+  loginInIdentityWindow(url) {
+    return new Promise((resolve, reject) => {
+      const authInfo = {
+        url: this.getAuthUrl(),
+        interactive: true,
+      };
+      chrome.identity.launchWebAuthFlow(authInfo, resolve);
+    });
+  }
+
+  loginInTab(url) {
+    let loginTabId = null;
+    let promise = new Promise((resolve, reject) => {
+      const onUpdate = (id, tabChange) => {
+        if (id !== loginTabId || !tabChange.url) {
+          return;
+        }
+
+        const parsedURL = new URL(tabChange.url);
+        if (parsedURL.hostname === (new URL(REDIR_URL_STR)).hostname) {
+          chrome.tabs.onRemoved.removeListener(onRemove);
+          chrome.tabs.onUpdated.removeListener(onUpdate);
+          chrome.tabs.remove(loginTabId);
+          resolve(tabChange.url);
+          return;
+        }
+        if (!parsedURL.hostname.endsWith('twitch.tv')) {
+          chrome.tabs.onRemoved.removeListener(onRemove);
+          chrome.tabs.onUpdated.removeListener(onUpdate);
+          resolve('');
+          return;
+        }
+      };
+      chrome.tabs.onUpdated.addListener(onUpdate);
+      const onRemove = id => {
+        if (id === loginTabId) {
+          chrome.tabs.onRemoved.removeListener(onRemove);
+          chrome.tabs.onUpdated.removeListener(onUpdate);
+          resolve('');
+        }
+      };
+      chrome.tabs.onRemoved.addListener(onRemove);
+    });
+    chrome.tabs.create({url: url}, tab => {
+      loginTabId = tab.id;
+    });
+    return promise;
+  }
+
+  makeLoginPromise(url) {
+    if (USE_IDENTITY_API) {
+      return this.loginInIdentityWindow(url);
+    }
+    return this.loginInTab(url);
+  }
+
   login() {
     if (this._loginPromise !== undefined) {
       return this._loginPromise;
     }
 
-    const authInfo = {
-      url: this.getAuthUrl(),
-      interactive: true,
-    };
     this._loginPromise = new Promise(resolve => {
-      chrome.identity.launchWebAuthFlow(authInfo, url => {
+      this.makeLoginPromise(this.getAuthUrl()).then(url => {
         const token = this.getTokenFromRedirectUrl(url);
 
         if (token === null) {
@@ -352,7 +406,9 @@ class TwitchApp {
     return this._loginPromise;
   }
 
-  waitForAuthentication() {}
+  waitForAuthentication() {
+    this.recordLoggedInState();
+  }
 
   async _onMessage(port, msg) {
     if (msg.id === undefined) {
@@ -415,18 +471,27 @@ class TwitchApp {
     return String(liveCount);
   }
 
-  updateStreamsInfo() {
+  recordLoggedInState() {
     this.stats.recordBoolean('loggedIn', !this.needsAuthentication());
+    const loggedIn = this.needsAuthentication() ? 'false' : 'true';
+    opr.statsPrivate.recordSessionAggregation(
+        'sidebar_twitch.logged_in', loggedIn,
+        opr.statsPrivate.Priority.NORMAL,
+        opr.statsPrivate.AggregationMode.RESET);
+  }
 
+  updateStreamsInfo() {
+    this.recordLoggedInState();
     return this.twitchRequest(async () => {
       let api = this.twitchAPI;
 
       const userInfo = await api.getUserInfo();
-      const followedChannels = await api.getFollowedChannels(
+      const followedChannels = await api.getChannelsFollowed(
         userInfo.data[0].id,
       );
 
-      const followedIds = followedChannels.data.map(folllow => folllow.to_id);
+      const followedIds = followedChannels.data.map(
+          folllow => folllow.broadcaster_id);
       const users = await api.getUsersInfo(followedIds);
       const streams = await api.getStreamsForChannnels(followedIds, false);
       const uniqueGameIds = [
@@ -444,10 +509,11 @@ class TwitchApp {
         // Empty user means the channel is deleted/suspended
         // so this is not any user data set for it is best effort, but not
         // fully reliable.
-        const user = users.data.find(userData => userData.id === follow.to_id);
+        const user = users.data.find(
+            userData => userData.id === follow.broadcaster_id);
         // Empty stream means user isn't streaming now
         const stream = streams.data.find(
-          streamData => streamData.user_id === follow.to_id,
+          streamData => streamData.user_id === follow.broadcaster_id,
         );
         const isLive = !!stream;
         const game =
@@ -456,11 +522,11 @@ class TwitchApp {
             : null;
 
         const followInfo = {
-          id: follow.to_id,
-          name: follow.to_name,
+          id: follow.broadcaster_id,
+          name: follow.broadcaster_name,
           iconUrl: user ? user.profile_image_url : TILE_PLACEHOLDER_URL,
           followed_at: follow.followed_at,
-          login: user ? user.login : follow.to_name,
+          login: follow.broadcaster_login,
           isLive: isLive,
           title: stream ? stream.title : '',
           viewerCount: stream ? stream.viewer_count : 0,
