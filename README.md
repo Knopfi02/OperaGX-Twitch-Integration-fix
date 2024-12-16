@@ -14,7 +14,7 @@ This means, you can get a working version and overwrite the broken one!
 2. Open Opera GX and go to the link `opera://extensions`. (you can also get to the extention settings by other means)
 3. Enable "Developer mode" in the top right corner.
 4. Click on "Load unpacked"
-5. Select the unpacked folder called "0.21.0_0"
+5. Select the unpacked folder called "0.22.0_0"
 
 Hope it helps :D
 
