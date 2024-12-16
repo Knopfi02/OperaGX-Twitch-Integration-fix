@@ -559,14 +559,23 @@ class TwitchApp {
     });
   }
 
+  async getUserFollowers(userId) {
+    try {
+      const followersResults = await this.twitchAPI.getChannelsFollowers(
+        userId,
+        false,
+      );
+      return followersResults.total;
+    } catch (error) {
+      console.error(error);
+      return 0;
+    }
+  }
+
   async getUserInfo() {
     const userResults = await this.twitchAPI.getUserInfo();
     const user = userResults.data[0];
-    const followersResults = await this.twitchAPI.getFollowersChannels(
-      user.id,
-      false,
-    );
-    user.followers = followersResults.total || 0;
+    user.followers = await this.getUserFollowers(user.id);
 
     return user;
   }

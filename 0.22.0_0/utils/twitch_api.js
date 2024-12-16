@@ -40,16 +40,6 @@ export class TwitchAPI {
     );
   }
 
-  // DEPRECATED
-  getFollowedChannels(userId, paginate = true) {
-    return this._paginatedApiRequest(
-      'users/follows',
-      {from_id: userId},
-      TwitchAPI.pageSize(paginate)
-    );
-  }
-
-  // Same as above but using new endpoint
   getChannelsFollowed(userId, paginate = true) {
     return this._paginatedApiRequest(
       'channels/followed',
@@ -58,16 +48,6 @@ export class TwitchAPI {
     );
   }
 
-  // DEPRECATED
-  getFollowersChannels(userId, paginate = true) {
-    return this._paginatedApiRequest(
-      'users/follows',
-      {to_id: userId},
-      TwitchAPI.pageSize(paginate)
-    );
-  }
-
-  // Same as above but using new endpoint
   getChannelsFollowers(userId, paginate = true) {
     return this._paginatedApiRequest(
       'channels/followers',
